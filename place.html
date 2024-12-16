@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sicily, Italy</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <h1>Sicily, Italy</h1>
+    </header>
+    <main>
+        <section class="hero">
+            <picture>
+                <source srcset="images/sicily-large.webp" media="(min-width: 800px)">
+                <source srcset="images/sicily-medium.webp" media="(min-width: 400px)">
+                <img src="images/sicily-small.webp" alt="Beautiful landscape of Sicily">
+            </picture>
+        </section>
+        <section class="data">
+            <h2>Information</h2>
+            <!-- Add your data content here -->
+        </section>
+        <section class="weather">
+            <h2>Weather ⛅</h2>
+            <div class="weather-icon">
+                <svg><!-- Add SVG content here --></svg>
+            </div>
+            <div class="weather-details">
+                <p>Temperature: <span id="temperature">15°C</span></p>
+                <p>Wind Speed: <span id="wind-speed">10 km/h</span></p>
+                <p>Wind Chill: <span id="wind-chill"></span></p>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; <span id="current-year"></span> Sicily, Italy</p>
+        <p>Last modified: <span id="last-modified"></span></p>
+    </footer>
+</body>
+
+</html>
