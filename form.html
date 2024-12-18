@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Review Form</title>
+    <link rel="stylesheet" href="styles/formStyles.css">
+</head>
+
+<body>
+    <form method="get" action="review.html">
+        <label for="product">Product Name</label>
+        <select id="product" name="product" required>
+            <option value="" disabled selected>Select a Product ...</option>
+        </select>
+
+        <label for="rating">Overall Rating</label>
+        <div id="rating">
+            <input type="radio" id="star1" name="rating" value="1" required>
+            <label for="star1">☆1</label>
+            <input type="radio" id="star2" name="rating" value="2">
+            <label for="star2">☆2</label>
+            <input type="radio" id="star3" name="rating" value="3">
+            <label for="star3">☆3</label>
+            <input type="radio" id="star4" name="rating" value="4">
+            <label for="star4">☆4</label>
+            <input type="radio" id="star5" name="rating" value="5">
+            <label for="star5">☆5</label>
+        </div>
+
+        <label for="installation-date">Date of Installation</label>
+        <input type="date" id="installation-date" name="installation-date" required>
+
+        <label>Useful Features</label>
+        <div>
+            <input type="checkbox" id="feature1" name="feature" value="feature1">
+            <label for="feature1">Travel Experience</label>
+            <input type="checkbox" id="feature2" name="feature" value="feature2">
+            <label for="feature2">Nostalgia</label>
+            <input type="checkbox" id="feature3" name="feature" value="feature3">
+            <label for="feature3">Coolness</label>
+        </div>
+
+        <label for="review">Written Review</label>
+        <textarea id="review" name="review"></textarea>
+
+        <label for="username">User Name</label>
+        <input type="text" id="username" name="username">
+
+        <input type="submit" value="Submit Review">
+    </form>
+
+    <script src="scripts/formScript.js"></script>
+</body>
+
+</html>
