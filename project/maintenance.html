@@ -22,6 +22,7 @@
     <main>
         <section id="maintenance-schedule">
             <h2>Maintenance Schedule</h2>
+            <input type="text" id="search" placeholder="Search by vehicle...">
             <table>
                 <thead>
                     <tr>
@@ -30,7 +31,7 @@
                         <th>Service Type</th>
                     </tr>
                 </thead>
-                <tbody>
+                <tbody id="schedule-body">
                     <tr>
                         <td>Truck 1</td>
                         <td>2025-01-15</td>
@@ -44,17 +45,26 @@
                 </tbody>
             </table>
         </section>
-        <section id="service-history">
-            <h2>Service History</h2>
-            <ul>
-                <li>Truck 1 - 2024-12-01 - Brake Inspection</li>
-                <li>Van 3 - 2024-11-20 - Battery Replacement</li>
-            </ul>
+        <section id="add-maintenance">
+            <h2>Add Maintenance Record</h2>
+            <form id="maintenance-form">
+                <label for="vehicle">Vehicle:</label>
+                <input type="text" id="vehicle" name="vehicle" required>
+
+                <label for="date">Next Service Date:</label>
+                <input type="date" id="date" name="date" required>
+
+                <label for="service">Service Type:</label>
+                <input type="text" id="service" name="service" required>
+
+                <button type="submit">Add Record</button>
+            </form>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 FleetCare Pro. All rights reserved.</p>
     </footer>
+    <script src="script.js"></script>
 </body>
 
 </html>

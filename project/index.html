@@ -24,34 +24,19 @@
             <h2>Welcome to FleetCare Pro</h2>
             <p>Your one-stop solution for managing and maintaining your fleet efficiently.</p>
         </section>
-        <section id="features">
-            <h2>Features</h2>
-            <ul>
-                <li>Track maintenance schedules</li>
-                <li>Record service history</li>
-                <li>Manage vehicle health</li>
-            </ul>
-        </section>
-        <section id="contact-form">
-            <h2>Contact Us</h2>
-            <form>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
-
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-
-                <label for="message">Message:</label>
-                <textarea id="message" name="message" required></textarea>
-
-                <button type="submit">Submit</button>
-            </form>
+        <section id="dashboard">
+            <h2>Dashboard</h2>
+            <div id="stats">
+                <p>Total Vehicles: <span id="total-vehicles">0</span></p>
+                <p>Upcoming Services: <span id="upcoming-services">0</span></p>
+                <p>Most Common Service: <span id="common-service">N/A</span></p>
+            </div>
         </section>
     </main>
     <footer>
         <p>&copy; 2024 FleetCare Pro. All rights reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="dashboard.js"></script>
 </body>
 
 </html>
