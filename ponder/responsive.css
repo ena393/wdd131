@@ -35,6 +35,13 @@ section {
 nav a {
     padding: 20px;
     color: black;
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border-top: 1px solid gray;
+}
+
+.hide {
     display: none;
 }
 
@@ -56,6 +63,20 @@ nav a:hover {
     height: 4px;
     background-color: black;
     margin: 5px 0;
+    transition: 0.6s;
+}
+
+.change .bar1 {
+    transform: translate(0, 9.5px) rotate(-225deg);
+}
+
+.change .bar2 {
+    transform: translate(200px, 0);
+    opacity: 0;
+}
+
+.change .bar3 {
+    transform: translate(0, -10px) rotate(225deg);
 }
 
 footer {
