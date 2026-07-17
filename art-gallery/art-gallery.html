@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8" />
+    <title>CSS Effect Library</title>
+    <link rel="stylesheet" href="styles/art-gallery.css" />
+    <link rel="icon" href="images/logo.png" />
+    <script src="scripts/art-gallery.js" defer></script>
+</head>
+
+<body data-theme="light">
+    <header class="site-header">
+        <div class="brand">
+            <img src="images/logo.png" alt="Site Logo" class="logo theme-invert" />
+            <img src="images/brand.png" alt="Brand Title" class="brand-image theme-invert" />
+        </div>
+
+        <div class="controls">
+            <button id="theme-toggle" aria-label="Toggle light and dark theme">
+                <span class="theme-icon">☀️</span>
+                <span class="theme-label">Light</span>
+            </button>
+
+            <nav class="filter-bar" aria-label="Filter gallery by category">
+                <button class="filter-button is-active" data-filter="all">All</button>
+                <button class="filter-button" data-filter="text">Text Effects</button>
+                <button class="filter-button" data-filter="hover">Hover & Interaction</button>
+                <button class="filter-button" data-filter="image">Image Effects</button>
+                <button class="filter-button" data-filter="layout">Layout & Utility</button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="gallery" id="gallery" aria-label="CSS effect gallery"></section>
+    </main>
+
+    <footer class="site-footer">
+        <p>2026 Evan Adams ~ CSS Effect Library</p>
+    </footer>
+
+    <div class="modal-overlay" id="modal-overlay" aria-hidden="true">
+        <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+            <button class="modal-close" id="modal-close" aria-label="Close details">&times;</button>
+
+            <header class="modal-header">
+                <h2 id="modal-title"></h2>
+                <p class="modal-category"></p>
+            </header>
+
+            <section class="modal-body">
+                <p class="modal-description"></p>
+
+                <div class="modal-art-preview">
+                    <div class="modal-art-canvas" id="modal-art-canvas"></div>
+                </div>
+
+                <div class="modal-code">
+                    <div class="code-block">
+                        <div class="code-header">
+                            <h3>HTML Snippet</h3>
+                            <button class="copy-button" data-target="html">Copy HTML</button>
+                        </div>
+                        <pre><code id="html-snippet"></code></pre>
+                    </div>
+
+                    <div class="code-block">
+                        <div class="code-header">
+                            <h3>CSS Snippet</h3>
+                            <button class="copy-button" data-target="css">Copy CSS</button>
+                        </div>
+                        <pre><code id="css-snippet"></code></pre>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </div>
+
+    <div class="toast" id="toast" aria-live="polite"></div>
+</body>
+
+</html>
