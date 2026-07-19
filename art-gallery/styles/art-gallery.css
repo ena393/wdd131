@@ -110,7 +110,7 @@ body {
 }
 
 .filter-button.is-active {
-    background: var(--accent1-color);
+    background: black;
 }
 
 .gallery {
